@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//RONGDI//DTD BEAN//CN"
+        "http://www.cnblogs.com/rongdi/beans.dtd">
+<beans>
+
+    <bean id="test12" class="com.rongdi.Test17">
+        <property name="property1">
+            <value type="java.lang.String">tianhaolin</value>
+        </property>
+        <property name="property2">
+            <ref bean="test13"/>
+        </property>
+        <property name="property3">
+            <value type="java.lang.Integer">22</value>
+        </property>
+        <property name="property4">
+            <collection type="list">
+                <value type="java.lang.Integer">1212</value>
+                <value type="java.lang.String">tianhaolin</value>
+            </collection>
+        </property>
+        <constructor-arg>
+            <value type="java.lang.String">wstear</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value type="java.lang.String">1989229</value>
+        </constructor-arg>
+    </bean>
+
+</beans>
